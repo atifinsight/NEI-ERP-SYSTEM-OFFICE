@@ -1,12 +1,54 @@
-# React + Vite
+# NEI-ERP-System Admin Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive Admin Dashboard built with **React.js**, **Tailwind CSS**, and **Lucide Icons**. This project serves as the admin panel for NEI-ERP, managing student admissions, payments, applications, and analytics with a clean and intuitive UI.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Responsive sidebar with toggle for mobile view
+- Dashboard cards with live stats (Students, Admissions, Payments, Applications)
+- Notification icon with counter badge
+- User profile dropdown with sign-out
+- Search bar for quick access
+- Analytics section with Revenue Overview and Activity Feed
+- Built with Tailwind CSS for rapid and clean styling
+- Modern icons via Lucide
+- Modular and scalable component structure
 
-## Expanding the ESLint configuration
+## 📸 Preview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Admin Dashboard](./Admin-Dashboard.PNG)
+
+## 🧱 Tech Stack
+
+- ⚛️ **React.js**
+- 🎨 **Tailwind CSS**
+- 🧭 **Lucide-react** (icon library)
+- ⚡ **Vite** (recommended for fast development)
+- 🧩 React Router DOM (for routing – recommended for future scalability)
+
+## 📂 Folder Structure
+src/
+├── components/
+│ └── Dashboard.jsx
+├── assets/
+│ └── logo.png
+├── App.jsx
+└── main.jsx
+
+
+## 🛠️ Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/nei-erp-dashboard.git
+cd nei-erp-dashboard
+
+2. Install Dependencies
+npm install
+
+3. Start Development Server
+npm run dev
+
+Open http://localhost:5173 in your browser.
+
