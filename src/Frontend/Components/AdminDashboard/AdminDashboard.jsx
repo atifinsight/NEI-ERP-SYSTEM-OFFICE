@@ -1,6 +1,9 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { useNavigate } from "react-router-dom";
+
+
 
 const Dashboard = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
@@ -22,6 +25,8 @@ const Dashboard = () => {
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen)
   }
+
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-gray-50 flex">
@@ -242,7 +247,17 @@ const Dashboard = () => {
                     <a
                       href="#"
                       className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                      onClick={() => setIsProfileDropdownOpen(false)}
+                      onClick={() => {
+                        // Close the dropdown
+                        setIsProfileDropdownOpen(false);
+
+                        // Clear user login data
+                        localStorage.removeItem("userLogin");
+                        localStorage.removeItem("isLoggedIn");
+
+                        // Navigate to login page
+                        navigate("/");
+                      }}
                     >
                       <svg className="w-4 h-4 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path
